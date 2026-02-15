@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: ghcr.io/<username>/my-python-app:latest
+          image: dockerhub-nyndow/my-python-app:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
